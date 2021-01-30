@@ -6,6 +6,7 @@ public class PushScript : MonoBehaviour
 {
     // Start is called before the first frame update
     public GameObject Box;
+    public float speed = 6f;
     void Start()
     {
 
@@ -14,6 +15,6 @@ public class PushScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Box.transform.Translate(Vector3.forward * Time.deltaTime);
+        Box.transform.Translate(Vector3.forward * speed * Time.deltaTime);
     }
 }
